@@ -1,0 +1,401 @@
+[24-Jul-2020 15:47:52 UTC] Slim Application Error:
+Type: PDOException
+Code: 1045
+Message: SQLSTATE[28000] [1045] Access denied for user 'wfb'@'ip-107-180-3-41.ip.secureserver.net' (using password: YES)
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=107....', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/enviaEMail.php(49): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(60): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[24-Jul-2020 15:48:28 UTC] Slim Application Error:
+Type: PDOException
+Code: 1045
+Message: SQLSTATE[28000] [1045] Access denied for user 'wfb'@'ip-107-180-3-41.ip.secureserver.net' (using password: YES)
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=107....', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/enviaEMail.php(49): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(60): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[24-Jul-2020 19:07:31 UTC] PHP Notice:  Undefined variable: nome in /home/p1dz4s372qoa/public_html/api/banco.php on line 95
+[27-Jul-2020 16:30:53 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(47): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:32:07 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(47): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:34:30 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:34:50 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:35:21 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:36:02 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:36:47 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:38:37 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(51): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:39:27 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(51): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:40:12 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(51): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:40:56 UTC] PHP Notice:  Undefined variable: resultado in /home/p1dz4s372qoa/public_html/api/modulos/login.php on line 49
+[27-Jul-2020 16:41:40 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev2'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:54:01 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:54:03 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:54:09 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:55:32 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:57:40 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(48): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[27-Jul-2020 16:58:49 UTC] Slim Application Error:
+Type: PDOException
+Code: 1044
+Message: SQLSTATE[42000] [1044] Access denied for user 'wfb'@'localhost' to database 'wfdev'
+File: /home/p1dz4s372qoa/public_html/api/banco.php
+Line: 10
+Trace: #0 /home/p1dz4s372qoa/public_html/api/banco.php(10): PDO->__construct('mysql:host=loca...', 'wfb', 'w1b2n310')
+#1 /home/p1dz4s372qoa/public_html/api/modulos/login.php(49): getConnection()
+#2 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(40): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#5 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 /home/p1dz4s372qoa/public_html/api/vendor/slim/slim/Slim/App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 /home/p1dz4s372qoa/public_html/api/index.php(61): Slim\App->run()
+#12 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
